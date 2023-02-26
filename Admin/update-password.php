@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                    <input type="hidden" name="id_admin" value="<?php echo $id_admin;?>">
+                    <input type="hidden" name="id_admin" value="<?php echo $_GET['$id_admin'];?>">
                       <input type="submit" name ="submit" value="mudar palavra-passe" class ="btn-secondary">
                     </td>
                 </tr>
