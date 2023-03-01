@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                    <input type="hidden" name="id_admin" value="<?php echo $id_admin;?>">
+                    <input type="hidden" name="id_admin" value="<?php echo $_GET['id_admin'];?>">
                       <input type="submit" name ="submit" value="mudar palavra-passe" class ="btn-secondary">
                     </td>
                 </tr>
@@ -76,7 +76,7 @@
                     if ($res2==true)
                      {
                        //User not found set message and redirect
-                        $_SESSION['changed-pwd'] ="<div class= 'uccesso'>Palavra-passe foi alterada com sucesso.</div>";
+                        $_SESSION['changed-pwd'] ="<div class= 'successo'>Palavra-passe foi alterada com sucesso.</div>";
                         //Redirect user
                         header('location:'.SITEURL.'admin/manage-admin.php');
                     }
